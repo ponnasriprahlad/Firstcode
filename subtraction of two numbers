@@ -1,0 +1,12 @@
+#include <stdio.h>
+int subtract(int *a, int *b) {
+    return *a - *b;
+}
+int main() {
+    int x, y;
+    if (scanf("%d %d", &x, &y) == 2) {
+        int result = subtract(&x, &y);
+        printf("%d\n", result);
+    }
+    return 0;
+}
